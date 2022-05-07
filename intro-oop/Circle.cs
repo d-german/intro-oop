@@ -3,6 +3,7 @@
     public class Circle
     {
         private double _radius = 0;
+        public Location Location { get; set; } = new();
 
         public Circle(double radius)
         {

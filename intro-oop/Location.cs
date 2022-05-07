@@ -2,27 +2,8 @@
 {
     public class Location
     {
-        private double _x;
-        private double _y;
+        public double X { get; set; }
 
-        public double GetX()
-        {
-            return _x;
-        }
-
-        public double GetY()
-        {
-            return _y;
-        }
-
-        public void SetX(double x)
-        {
-            _x = x;
-        }
-
-        public void SetY(double y)
-        {
-            _y = y;
-        }
+        public double Y { get; set; }
     }
 }
