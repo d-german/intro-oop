@@ -1,9 +1,8 @@
-﻿namespace intro_oop
-{
-    public class Location
-    {
-        public double X { get; init; }
+﻿namespace intro_oop;
 
-        public double Y { get; init; }
-    }
+public class Location
+{
+    public double X { get; init; }
+
+    public double Y { get; init; }
 }
