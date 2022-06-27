@@ -1,6 +1,6 @@
 ﻿namespace intro_oop;
 
-public class Triangle
+public class Triangle : Shape
 {
     private readonly double _base;
     private readonly double _height;
@@ -11,7 +11,7 @@ public class Triangle
         _height = height;
     }
 
-    public double GetArea()
+    public override double Area()
     {
         return _base * _height / 2;
     }

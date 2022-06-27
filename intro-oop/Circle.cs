@@ -1,16 +1,15 @@
 ﻿namespace intro_oop
 {
-    public class Circle
+    public class Circle : Shape
     {
         private readonly double _radius;
-        public Location? Location { get; set; }
 
         public Circle(double radius)
         {
             _radius = radius;
         }
 
-        public double Area()
+        public override double Area()
         {
             return Math.PI * _radius * _radius;
         }
