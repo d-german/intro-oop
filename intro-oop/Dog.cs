@@ -2,7 +2,7 @@
 
 public class Dog : INamable
 {
-    public string GetName()
+    public string GetName() // note: no override keyword
     {
         return "Samson";
     }

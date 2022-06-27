@@ -2,5 +2,5 @@
 
 public interface INamable
 {
-    string GetName();
+    string GetName(); // note: no visibility modifier or virtual keyword
 }
