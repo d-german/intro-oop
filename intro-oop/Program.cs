@@ -2,10 +2,17 @@
 
 using intro_oop;
 
-Console.WriteLine(new Circle(1.0).Area());
-Console.WriteLine(new Triangle(1.0, 2.0).Area());
+var circle = new Circle(1.0);
+var triangle = new Triangle(1.0, 2.0);
 
+var shapes = new List<Shape> { circle, triangle };
 
-var location1 = new Location { X = 1.0, Y = 2.0 };
-var location2 = new Location { X = 1.0, Y = 2.0 };
-Console.WriteLine(location1.Equals(location2));
+PrintArea(shapes);
+
+void PrintArea(IEnumerable<Shape> shapes)
+{
+    foreach (var shape in shapes)
+    {
+        Console.WriteLine(shape.Area());
+    }
+}
